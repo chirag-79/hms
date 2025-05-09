@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospital Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: url('https://images.unsplash.com/photo-1588776814546-ec7e3673b2b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1576765607924-722d5efb9754?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    header img {
+      width: 120px;
+      height: auto;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    nav {
+      background-color: rgba(52, 152, 219, 0.9);
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #219150;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: rgba(44, 62, 80, 0.9);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/036/372/442/small_2x/hospital-building-with-ambulance-emergency-car-on-cityscape-background-cartoon-illustration-vector.jpg" alt="Hospital Image">
+    <h1>Hospital Management System</h1>
+  </header>
+
+  <nav>
+    <a href="#registration">Register</a>
+    <a href="#reports">Reports</a>
+    <a href="#billing">Billing</a>
+    <a href="#complaints">Complaints</a>
+    <a href="#payment">Payment</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="registration">
+      <h2>Patient Registration</h2>
+      <input type="text" placeholder="Full Name">
+      <input type="number" placeholder="Age">
+      <input type="text" placeholder="Gender">
+      <input type="text" placeholder="Contact Number">
+      <input type="email" placeholder="Email Address">
+      <button>Register Patient</button>
+    </section>
+
+    <section id="reports">
+      <h2>Patient Reports</h2>
+      <input type="text" placeholder="Enter Patient ID">
+      <button>View Reports</button>
+    </section>
+
+    <section id="billing">
+      <h2>Billing</h2>
+      <input type="text" placeholder="Enter Patient ID">
+      <button>Generate Bill</button>
+    </section>
+
+    <section id="complaints">
+      <h2>Submit a Complaint</h2>
+      <input type="text" placeholder="Your Name">
+      <textarea placeholder="Write your complaint here..."></textarea>
+      <button>Submit Complaint</button>
+    </section>
+
+    <section id="payment">
+      <h2>Payment</h2>
+      <p>Click below to make a payment:</p>
+      <a href="#" style="text-decoration:none;">
+        <button>Go to Payment</button>
+      </a>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; Thankyouu visit us again!!
+  </footer>
+
+</body>
+</html>
